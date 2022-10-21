@@ -1,0 +1,11 @@
+<mat-toolbar  color="primary">
+    <span >
+      {{ title }}
+    </span>
+    <span class="flexExpand"></span>
+    <mat-form-field  appearance="outline" floatLabel="never" >
+      <mat-icon class="black-icon" matSuffix>search</mat-icon>
+      <input matInput [(ngModel)]="searchTerm" placeholder="Type here to search"  color="accent">
+
+    </mat-form-field>
+</mat-toolbar>
