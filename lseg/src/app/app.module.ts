@@ -10,6 +10,9 @@ import { MatSelectModule } from '@angular/material/select';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import {ScrollingModule} from '@angular/cdk/scrolling';
+import {MatRadioModule} from '@angular/material/radio';
 
 
 @NgModule({
@@ -28,6 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MatInputModule,
     MatInputModule,
     MatSelectModule,
+    MatSidenavModule,
+    ScrollingModule,
+    MatRadioModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

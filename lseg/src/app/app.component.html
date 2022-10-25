@@ -9,3 +9,16 @@
 
     </mat-form-field>
 </mat-toolbar>
+
+
+      <cdk-virtual-scroll-viewport itemSize="50"  class="example-viewport">
+        <mat-radio-group aria-label="Select an option">
+          <div *cdkVirtualFor="let link of links" class="example-item">
+
+
+            <mat-radio-button value={{link.title}}><mat-icon>{{link.icon}}</mat-icon>
+              {{link.title}}</mat-radio-button>
+          </div>
+        </mat-radio-group>
+      </cdk-virtual-scroll-viewport>
+
