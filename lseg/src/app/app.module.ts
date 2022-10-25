@@ -14,6 +14,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import {ScrollingModule} from '@angular/cdk/scrolling';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import {MatTabsModule} from '@angular/material/tabs';
     ScrollingModule,
     MatRadioModule,
     MatTabsModule,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

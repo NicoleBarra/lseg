@@ -16,15 +16,27 @@
   <mat-tab label="Model"> </mat-tab>
 </mat-tab-group>
 
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened class="app-sidenav">
+    <!-- Sidenav Menu -->
+    <nav>
 
-      <cdk-virtual-scroll-viewport itemSize="50"  class="example-viewport">
-        <mat-radio-group aria-label="Select an option">
-          <div *cdkVirtualFor="let link of links" class="example-item">
 
+    <mat-radio-group aria-label="Select an option">
+      <a mat-button class="nav-link"
+      *ngFor="let link of links"
+      >
+      <mat-radio-button value={{link.title}}><mat-icon>{{link.icon}}</mat-icon>
+      {{link.title}}</mat-radio-button>
+    </a>
+    </mat-radio-group>
+    </nav>
+  </mat-sidenav>
 
-            <mat-radio-button value={{link.title}}><mat-icon>{{link.icon}}</mat-icon>
-              {{link.title}}</mat-radio-button>
-          </div>
-        </mat-radio-group>
-      </cdk-virtual-scroll-viewport>
-
+  <div class="container">
+    <mat-card>Cache</mat-card>
+    <mat-card>Data Warehouse</mat-card>
+    <mat-card>Relational Database Management System(RDBMS)</mat-card>
+    <mat-card>noSQL DataBase</mat-card>
+  </div>
+</mat-sidenav-container>
